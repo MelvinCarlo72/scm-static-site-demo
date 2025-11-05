@@ -6,7 +6,7 @@ export default [
     ignores: ["dist", "node_modules"],
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module",
+      sourceType: "module"
     },
     ...js.configs.recommended,
     rules: {
