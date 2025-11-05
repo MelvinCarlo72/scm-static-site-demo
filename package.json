@@ -1,0 +1,14 @@
+{
+  "name": "scm-static-site-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site with GitHub Pages CI/CD + ESLint quality gate",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "mkdir -p dist && cp -r index.html styles.css script.js assets dist/",
+    "start": "npx http-server -c-1 -p 8080"
+  },
+  "devDependencies": {
+    "eslint": "^9.13.0"
+  }
+}
