@@ -17,10 +17,13 @@ if (btn) {
   });
 }
 
-// --- Eye-Catching Rainbow Title Effect ---
+// --- Eye-Catching Smooth Rainbow Title Effect ---
 (function rainbowEffect() {
   const title = document.querySelector("h1");
   if (!title) return;
+
+  // Smooth fade effect
+  title.style.transition = "color 0.8s ease";
 
   const colors = ["#ff4d4d", "#ff884d", "#ffe04d", "#4dff4d", "#4dffff", "#4d79ff", "#b84dff"];
   let index = 0;
@@ -28,5 +31,5 @@ if (btn) {
   setInterval(() => {
     title.style.color = colors[index];
     index = (index + 1) % colors.length;
-  }, 600);
+  }, 800); // slower timing also feels smoother
 })();
