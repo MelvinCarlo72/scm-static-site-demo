@@ -5,7 +5,7 @@
   "description": "Static site with GitHub Pages CI/CD + ESLint quality gate",
   "scripts": {
     "lint": "eslint .",
-    "build": "mkdir -p dist && cp -r index.html styles.css script.js assets dist/",
+    "build": "mkdir -p dist && cp index.html dist/ && cp styles.css dist/ && cp script.js dist/ && cp -r assets dist/",
     "start": "npx http-server -c-1 -p 8080"
   },
   "devDependencies": {
